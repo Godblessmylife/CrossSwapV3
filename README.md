@@ -1,8 +1,8 @@
-# 🥞 Pancake Frontend
+# CROSSFIGOD DEFI
 
 <p align="center">
-  <a href="https://pancakeswap.finance">
-      <img src="https://pancakeswap.finance/logo.png" height="128">
+  <a href="Crossfigod.io">
+      <a href="https://ibb.co/tXd2zRK"><img src="https://i.ibb.co/zJk2Fdx/Logo.png" alt="Logo" border="0"></a>
   </a>
 </p>
 
