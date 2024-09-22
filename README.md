@@ -6,7 +6,8 @@
   </a>
 </p>
 
-This project contains the main features of the pancake application.
+This project contains the main features of the Pancake Application V4  , AAVE , UNISWAP , TRADER JOE , Yield Yak
+ | Avalanche, Beefy Finance, Raydium , Jupiter , Curve.
 
 If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
 
