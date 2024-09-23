@@ -1,4 +1,4 @@
-# @pancakeswap/aptos-swap-sdk
+# CrossFiGodSwap  SDKv2
 
 ## 1.0.2
 
