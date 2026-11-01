@@ -1,111 +1,53 @@
-# CROSSFIGOD DEFI
+# CrossSwap
 
-<p align="center">
-  <a href="Crossfigod.io">
-      <a href="https://ibb.co/tXd2zRK"><img src="https://i.ibb.co/zJk2Fdx/Logo.png" alt="Logo" border="0"></a>
-  </a>
-</p>
+A DeFi web interface for the CrossFi network, based on the open-source PancakeSwap frontend.
 
-This project contains the main features of the Pancake Application V4  , AAVE , UNISWAP , TRADER JOE , Yield Yak
- | Avalanche, Beefy Finance, Raydium , Jupiter , Curve.
+Built for the DoraHacks CrossFi hackathon (2024): [project page](https://dorahacks.io/build/15933) · Community: [Telegram](https://t.me/crossfigodcom)
 
-If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
+## About
 
-## Documentation
+CrossSwap is a fork of [pancakeswap/pancake-frontend](https://github.com/pancakeswap/pancake-frontend). It keeps the upstream monorepo structure (web app, SDK packages, UI kit) and adapts it as the interface layer for a CrossFi DEX.
 
-- [Info](doc/Info.md)
-- [Cypress tests](doc/Cypress.md)
+Related repository with the CFG token, tests, deployment script and whitepaper: [CROSSFIGOD-DEFI-V3](https://github.com/Godblessmylife/CROSSFIGOD-DEFI-V3).
 
-> Install dependencies using [pnpm](https://pnpm.io)
+## Credits and license
 
-## `apps/web`
+This project is a derivative of the PancakeSwap frontend and is released under the [GNU General Public License v3.0](./LICENSE), the same license as the upstream project. Copyright and attribution notices from upstream are kept. Many package names and descriptions below come from upstream.
 
-<details>
-<summary>
-How to start
-</summary>
+## Changes from upstream
+
+<!--
+List what you changed or added for CrossFi, one line each. For example:
+- CrossFi chain configuration (chain ID, RPC, explorer)
+- Branding, logo and texts
+- Token lists for CrossFi
+- Anything else you actually modified
+-->
+
+## Repository structure
+
+| Path | Description |
+| --- | --- |
+| `apps/web` | Main DEX web application |
+| `apps/aptos` | Aptos application |
+| `apps/blog` | Blog |
+| `apps/bridge` | Bridge |
+| `apps/games` | Games |
+| `apps/e2e` | End-to-end tests |
+| `packages/*` | Shared SDKs, hooks, UI kit and configuration |
+
+## Getting started
+
+Requirements: [pnpm](https://pnpm.io) 8.
 
 ```sh
-pnpm i
+pnpm install
 ```
 
-start the development server
+### `apps/web`
 
 ```sh
+# development server
 pnpm dev
-```
 
-build with production mode
-
-```sh
-pnpm build
-
-# start the application after build
-pnpm start
-```
-
-</details>
-
-## `apps/aptos`
-
-<details>
-<summary>
-How to start
-</summary>
-
-```sh
-pnpm dev:aptos
-```
-
-```sh
-pnpm build:aptos
-```
-
-</details>
-
-## `apps/blog`
-
-<details>
-<summary>
-How to start
-</summary>
-
-```sh
-pnpm dev:blog
-```
-
-```sh
-pnpm build:blog
-```
-
-</details>
-
-## `apps/games`
-
-<details>
-<summary>
-How to start
-</summary>
-
-```sh
-pnpm dev:games
-```
-
-```sh
-pnpm build:games
-```
-
-</details>
-
-## Packages
-
-| Package                                    | Description                                                                                                 |
-| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
-| [sdk](/packages/swap-sdk)                  | An SDK for building applications on top of Pancakeswap                                                      |
-| [aptos-swap-sdk](/packages/aptos-swap-sdk) | Aptos version of Swap SDK                                                                                   |
-| [swap-sdk-core](/packages/swap-sdk-core)   | Swap SDK Shared code                                                                                        |
-| [wagmi](/packages/wagmi)                   | Extension for [wagmi](https://github.com/wagmi-dev/wagmi), including bsc chain and binance wallet connector |
-| [awgmi](/packages/awgmi)                   | Connect to Aptos with similar wagmi React hooks.                                                            |
-| [smart-router](/packages/smart-router)     | An SDK for getting best trade routes.                                                                       |
-| [multicall](/packages/multicall)           | Enhanced multicall sdk to safely make multicalls within the gas limit.                                      |
-| [v3-sdk](/packages/v3-sdk)                 | An SDK for building applications on top of Pancakeswap V3.                                                  |
+# production
